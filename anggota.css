@@ -1,0 +1,10 @@
+.wali {
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.25);
+    margin-bottom: 20px;
+}
+
+.wali h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}

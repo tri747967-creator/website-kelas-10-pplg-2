@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, #3b176b, #8e44ad);
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+/* ISI */
+
+.welcome {
+    padding-top: 150px;
+    color: white;
+}
+
+.small-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 17px;
+}
+
+.school {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+
+
+.wali {
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.25);
+    margin-bottom: 20px;
+}
+
+.wali h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+
+.anggota {
+    color: white;
+}
+
+.anggota h1,
+.anggota h2,
+.anggota p {
+    color: white;
+}
+
+
+
+
+
+
+/* TENTANG KELAS */
+
+.tentang {
+    padding: 50px 20px;
+    color: white;
+}
+
+.tentang h1 {
+    margin-bottom: 10px;
+}
+
+.subjudul {
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.info-kelas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.info-card {
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.info-card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.info-card p {
+    font-size: 15px;
+}
+
+.deskripsi-kelas {
+    max-width: 600px;
+    margin: 40px auto 0;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.deskripsi-kelas h2 {
+    margin-bottom: 15px;
+}
+
+.deskripsi-kelas p {
+    line-height: 1.7;
+}
+
+.quote-kelas {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+.typing-container h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    display: inline-block;
+    border-right: 3px solid white;
+    padding-right: 5px;
+
+    animation: cursorBlink 0.7s infinite;
+}
+
+@keyframes cursorBlink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+
+/* =========================
+   JADWAL PELAJARAN
+   ========================= */
+
+.jadwal {
+    padding: 50px 20px;
+    color: white;
+}
+
+.jadwal h1 {
+    margin-bottom: 10px;
+}
+
+.subjudul {
+    margin-bottom: 35px;
+}
+
+.hari {
+    max-width: 600px;
+    margin: 0 auto 35px;
+}
+
+.hari h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.jadwal-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px;
+    margin-bottom: 10px;
+
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.jadwal-card span {
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+.jadwal-card strong {
+    font-size: 16px;
+    color: white;
+}
