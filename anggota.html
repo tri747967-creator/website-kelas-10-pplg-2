@@ -10,19 +10,27 @@
 </head>
 
 <body>
+  
+ <nav class="navbar">
 
-    <!-- NAVIGASI -->
-    <nav class="navbar">
+    <!-- LIQUID GLASS -->
+    <div class="nav-indicator"></div>
 
-        <div class="logo">X PPLG 2</div>
+     <!-- MENU -->
+    <a href="index.html" class="nav-item">home</a>
 
-        <div class="nav-menu">
-            <a href="home.html">HOME</a>
-            <a href="anggota.html">ANGGOTA</a>
-            <a href="tentang.html">TENTANG KELAS</a>
-            <a href="jadwal.html">JADWAL</a>
-            <a href="galeri.html">GALERI</a>
-        </div>
+    <a href="jadwal.html" class="nav-item">jadwal</a>
+
+    <a href="anggota.html" class="nav-item active">anggota</a>
+   
+    <a href="tentang.html" class ="nav-item">tentang</a>
+
+    <a href="galeri.html" class="nav-item">galeri</a>
+
+</nav>
+
+
+</body>
 
     </nav>
 
@@ -239,6 +247,37 @@
         </div>
 
     </main>
+ <script>
+
+const nav=document.querySelector(".navbar");
+const glass=document.querySelector(".nav-indicator");
+const items=document.querySelectorAll(".nav-item");
+
+function move(item){
+    glass.style.left=item.offsetLeft+"px";
+    glass.style.width=item.offsetWidth+"px";
+}
+
+items.forEach(item=>{
+    item.addEventListener("click",e=>{
+
+        items.forEach(i=>i.classList.remove("active"));
+        item.classList.add("active");
+
+        move(item);
+    });
+});
+
+window.onload=()=>{
+    move(document.querySelector(".active"));
+};
+
+</script>
+</body>
+</script>
+</body>
+
+
 
 </body>
 </html>
